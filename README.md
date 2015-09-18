@@ -81,3 +81,15 @@ Available buttons names are:
 * "dpad y"
 * "left trigger"
 * "right trigger"
+
+# Install
+
+With [npm](https://www.npmjs.com/) do:
+
+```
+npm install --save html5-gamepad
+```
+
+# License
+
+[MIT](LICENSE)
