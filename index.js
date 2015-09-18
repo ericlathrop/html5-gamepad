@@ -115,6 +115,10 @@ function transformGamepad(threshold, gamepad) {
 	return gp;
 }
 
+function isDefined(val) {
+	return val !== undefined;
+}
+
 function Gamepad() {
 	this.threshold = 0.001;
 	this.gamepads = [];
@@ -122,7 +126,9 @@ function Gamepad() {
 Gamepad.prototype.update = function() {
 	// navigator.getGamepads() returns an array-like object, not an actual object
 	// so convert to an array so we can call map()
-	var gamepads = Array.prototype.slice.call(navigator.getGamepads());
+	//
+	// WTF: webkit always returns 4 gamepads, so remove the undefined ones
+	var gamepads = Array.prototype.slice.call(navigator.getGamepads()).filter(isDefined);
 	this.gamepads = gamepads.map(transformGamepad.bind(undefined, this.threshold));
 	document.getElementById("content").innerHTML = JSON.stringify(this.gamepads, null, 2);
 };
