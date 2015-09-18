@@ -79,7 +79,7 @@ var mappings = [
 function getMapping(gamepadId, userAgent) {
 	return mappings.filter(function(mapping) {
 		return gamepadId.indexOf(mapping.id) !== -1 && userAgent.indexOf(mapping.userAgent) !== -1;
-	})[0];
+	})[0] || mappings[0];
 }
 
 function transformButton(mapping, gp, button, i) {
