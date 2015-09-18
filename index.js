@@ -73,6 +73,59 @@ var mappings = [
 				]
 			}
 		]
+	},
+	{
+		"id": "Logitech Gamepad F310",
+		"userAgent": "WebKit",
+		"buttons": [
+			"a",
+			"b",
+			"x",
+			"y",
+			"left shoulder",
+			"right shoulder",
+			"left trigger",
+			"right trigger",
+			"back",
+			"start",
+			"left stick",
+			"right stick",
+			"dpad up",
+			"dpad down",
+			"dpad left",
+			"dpad right",
+			"home",
+		],
+		"axes": [
+			{
+				"name": "left stick x",
+				"buttons": [
+					"left stick left",
+					"left stick right",
+				]
+			},
+			{
+				"name": "left stick y",
+				"buttons": [
+					"left stick up",
+					"left stick down",
+				]
+			},
+			{
+				"name": "right stick x",
+				"buttons": [
+					"right stick left",
+					"right stick right",
+				]
+			},
+			{
+				"name": "right stick y",
+				"buttons": [
+					"right stick up",
+					"right stick down",
+				]
+			}
+		]
 	}
 ];
 
