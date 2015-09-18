@@ -84,12 +84,15 @@ function getMapping(gamepadId, userAgent) {
 
 function transformButton(mapping, gp, button, i) {
 	var name = mapping.buttons[i];
+	if (name === undefined) {
+		name = "button " + i;
+	}
 	gp.buttons[name] = button.pressed;
 	return gp;
 }
 
 function transformAxis(mapping, threshold, gp, axis, i) {
-	var ma = mapping.axes[i];
+	var ma = mapping.axes[i] || { name: "axis " + i };
 	var name = ma.name;
 	gp.axes[name] = axis;
 	if (ma.buttons) {
