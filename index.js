@@ -120,7 +120,10 @@ function Gamepad() {
 	this.gamepads = [];
 }
 Gamepad.prototype.update = function() {
-	this.gamepads = navigator.getGamepads().map(transformGamepad.bind(undefined, this.threshold));
+	// navigator.getGamepads() returns an array-like object, not an actual object
+	// so convert to an array so we can call map()
+	var gamepads = Array.prototype.slice.call(navigator.getGamepads());
+	this.gamepads = gamepads.map(transformGamepad.bind(undefined, this.threshold));
 	document.getElementById("content").innerHTML = JSON.stringify(this.gamepads, null, 2);
 };
 Gamepad.prototype.axis = function(gamepad, axis) {
