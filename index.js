@@ -1,39 +1,146 @@
-var buttons = [];
+var mappings = [
+	{
+		"id": "Logitech Gamepad F310",
+		"userAgent": "Firefox",
+		"buttons": [
+			"a",
+			"b",
+			"x",
+			"y",
+			"left shoulder",
+			"right shoulder",
+			"back",
+			"start",
+			"home",
+			"left stick",
+			"right stick",
+		],
+		"axes": [
+			{
+				"name": "left stick x",
+				"buttons": [
+					"left stick left",
+					"left stick right",
+				]
+			},
+			{
+				"name": "left stick y",
+				"buttons": [
+					"left stick up",
+					"left stick down",
+				]
+			},
+			{
+				"name": "left trigger",
+				"buttons": [
+					null,
+					"left trigger",
+				]
+			},
+			{
+				"name": "right stick x",
+				"buttons": [
+					"right stick left",
+					"right stick right",
+				]
+			},
+			{
+				"name": "right stick y",
+				"buttons": [
+					"right stick up",
+					"right stick down",
+				]
+			},
+			{
+				"name": "right trigger",
+				"buttons": [
+					null,
+					"right trigger",
+				]
+			},
+			{
+				"name": "dpad x",
+				"buttons": [
+					"dpad left",
+					"dpad right",
+				]
+			},
+			{
+				"name": "dpad y",
+				"buttons": [
+					"dpad up",
+					"dpad down",
+				]
+			}
+		]
+	}
+];
 
-function Gamepad(num) {
-	this.num = num;
+function getMapping(gamepadId, userAgent) {
+	return mappings.filter(function(mapping) {
+		return gamepadId.indexOf(mapping.id) !== -1 && userAgent.indexOf(mapping.userAgent) !== -1;
+	})[0];
+}
+
+function transformButton(mapping, gp, button, i) {
+	var name = mapping.buttons[i];
+	gp.buttons[name] = button.pressed;
+	return gp;
+}
+
+function transformAxis(mapping, threshold, gp, axis, i) {
+	var ma = mapping.axes[i];
+	var name = ma.name;
+	gp.axes[name] = axis;
+	if (ma.buttons) {
+		if (ma.buttons[0] !== null) {
+			gp.buttons[ma.buttons[0]] = axis < -threshold;
+		}
+		if (ma.buttons[1] !== null) {
+			gp.buttons[ma.buttons[1]] = axis > threshold;
+		}
+	}
+	return gp;
+}
+
+function transformGamepad(threshold, gamepad) {
+	var gp = {
+		id: gamepad.id,
+		buttons: {},
+		axes: {}
+	};
+	var mapping = getMapping(gamepad.id, navigator.userAgent);
+	gp = gamepad.buttons.reduce(transformButton.bind(undefined, mapping), gp),
+	gp = gamepad.axes.reduce(transformAxis.bind(undefined, mapping, threshold), gp);
+	return gp;
+}
+
+function Gamepad() {
 	this.threshold = 0.001;
-	this.axes = [];
-	this.buttons = [];
+	this.gamepads = [];
 }
 Gamepad.prototype.update = function() {
-	var gp = navigator.getGamepads();
-	if (this.num >= gp.length) {
-		return;
+	this.gamepads = navigator.getGamepads().map(transformGamepad.bind(undefined, this.threshold));
+	document.getElementById("content").innerHTML = JSON.stringify(this.gamepads, null, 2);
+};
+Gamepad.prototype.axis = function(num, axis) {
+	if (num >= this.gamepads.length) {
+		return false;
 	}
-	gp = gp[this.num];
-	this.axes = gp.axes.slice(0);
-	this.buttons = gp.buttons.map(function(button) {
-		return button.pressed;
-	});
+	return this.gamepads[num].axes[axis];
 };
-Gamepad.prototype.isPressed = function(button) {
-	var p = this.axes.reduce(function(pressed, axis) {
-		return pressed.concat(axis < -this.threshold, axis > this.threshold);
-	}.bind(this), []).concat(this.buttons);
-
-	var debug = p.map(function(b, i) {
-		return b ? i.toString() : "-";
-	}).join(" ");
-	document.getElementById("content").innerHTML = debug;
-	return p[button];
+Gamepad.prototype.isPressed = function(num, button) {
+	if (num >= this.gamepads.length) {
+		return false;
+	}
+	return this.gamepads[num].buttons[button];
 };
 
-var g = new Gamepad(0);
+var g = new Gamepad();
 
 function render() {
 	g.update();
-	g.isPressed(0);
+	g.isPressed(0, "a");
 	window.requestAnimationFrame(render);
 }
 window.requestAnimationFrame(render);
