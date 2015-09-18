@@ -1,0 +1,33 @@
+{
+  "name": "html5-gamepad",
+  "version": "0.0.0",
+  "description": "Use gamepads consistently across HTML5 browsers",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "build": "browserify -s Gamepad -o example/index.js index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericlathrop/html5-gamepad.git"
+  },
+  "keywords": [
+    "html",
+    "html5",
+    "gamepad",
+    "browser",
+    "joystick",
+    "controller"
+  ],
+  "author": "Eric Lathrop <eric@ericlathrop.com> (http://ericlathrop.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericlathrop/html5-gamepad/issues"
+  },
+  "homepage": "https://github.com/ericlathrop/html5-gamepad#readme",
+  "devDependencies": {
+    "browserify": "^11.1.0"
+  }
+}

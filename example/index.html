@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>html5-gamepad example</title>
+</head>
+<body>
+	<p>Connect a gamepad and press a button on it.</p>
+	<pre>
+		<div id="content"></div>
+	</pre>
+	<script type="text/javascript" src="index.js"></script>
+	<script>
+		var g = new Gamepad();
+
+		function render() {
+			g.update();
+			document.getElementById("content").innerHTML = JSON.stringify(g.gamepads, null, 2);
+			window.requestAnimationFrame(render);
+		}
+		window.requestAnimationFrame(render);
+	</script>
+</body>
+</html>
