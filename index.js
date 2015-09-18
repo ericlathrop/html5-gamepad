@@ -123,24 +123,26 @@ Gamepad.prototype.update = function() {
 	this.gamepads = navigator.getGamepads().map(transformGamepad.bind(undefined, this.threshold));
 	document.getElementById("content").innerHTML = JSON.stringify(this.gamepads, null, 2);
 };
-Gamepad.prototype.axis = function(num, axis) {
-	if (num >= this.gamepads.length) {
-		return false;
+Gamepad.prototype.axis = function(gamepad, axis) {
+	if (gamepad >= this.gamepads.length) {
+		return 0;
 	}
-	return this.gamepads[num].axes[axis];
+	return this.gamepads[gamepad].axes[axis];
 };
-Gamepad.prototype.isPressed = function(num, button) {
-	if (num >= this.gamepads.length) {
+Gamepad.prototype.count = function() {
+	return this.gamepads.length;
+}
+Gamepad.prototype.isPressed = function(gamepad, button) {
+	if (gamepad >= this.gamepads.length) {
 		return false;
 	}
-	return this.gamepads[num].buttons[button];
+	return this.gamepads[gamepad].buttons[button];
 };
 
 var g = new Gamepad();
 
 function render() {
 	g.update();
-	g.isPressed(0, "a");
 	window.requestAnimationFrame(render);
 }
 window.requestAnimationFrame(render);
