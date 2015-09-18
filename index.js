@@ -130,7 +130,6 @@ Gamepad.prototype.update = function() {
 	// WTF: webkit always returns 4 gamepads, so remove the undefined ones
 	var gamepads = Array.prototype.slice.call(navigator.getGamepads()).filter(isDefined);
 	this.gamepads = gamepads.map(transformGamepad.bind(undefined, this.threshold));
-	document.getElementById("content").innerHTML = JSON.stringify(this.gamepads, null, 2);
 };
 Gamepad.prototype.axis = function(gamepad, axis) {
 	if (gamepad >= this.gamepads.length) {
@@ -152,6 +151,7 @@ var g = new Gamepad();
 
 function render() {
 	g.update();
+	document.getElementById("content").innerHTML = JSON.stringify(g.gamepads, null, 2);
 	window.requestAnimationFrame(render);
 }
 window.requestAnimationFrame(render);
