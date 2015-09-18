@@ -1,6 +1,8 @@
 # html5-gamepad
 Use gamepads consistently across HTML5 browsers
 
+# [test page](https://ericlathrop.github.io/html5-gamepad/)
+
 # example
 
 ```javascript
