@@ -3,17 +3,39 @@ var mappings = [
 		"id": "Logitech Gamepad F310",
 		"userAgent": "Firefox",
 		"buttons": [
-			"a",
-			"b",
-			"x",
-			"y",
-			"left shoulder",
-			"right shoulder",
-			"back",
-			"start",
-			"home",
-			"left stick",
-			"right stick",
+			{
+				"name": "a"
+			},
+			{
+				"name": "b"
+			},
+			{
+				"name": "x"
+			},
+			{
+				"name": "y"
+			},
+			{
+				"name": "left shoulder"
+			},
+			{
+				"name": "right shoulder"
+			},
+			{
+				"name": "back"
+			},
+			{
+				"name": "start"
+			},
+			{
+				"name": "home"
+			},
+			{
+				"name": "left stick"
+			},
+			{
+				"name": "right stick"
+			},
 		],
 		"axes": [
 			{
@@ -78,23 +100,69 @@ var mappings = [
 		"id": "Logitech Gamepad F310",
 		"userAgent": "WebKit",
 		"buttons": [
-			"a",
-			"b",
-			"x",
-			"y",
-			"left shoulder",
-			"right shoulder",
-			"left trigger",
-			"right trigger",
-			"back",
-			"start",
-			"left stick",
-			"right stick",
-			"dpad up",
-			"dpad down",
-			"dpad left",
-			"dpad right",
-			"home",
+			{
+				"name": "a"
+			},
+			{
+				"name": "b"
+			},
+			{
+				"name": "x"
+			},
+			{
+				"name": "y"
+			},
+			{
+				"name": "left shoulder"
+			},
+			{
+				"name": "right shoulder"
+			},
+			{
+				"name": "left trigger",
+				"axis": "left trigger",
+				"axisValue": 1
+			},
+			{
+				"name": "right trigger",
+				"axis": "right trigger",
+				"axisValue": 1
+			},
+			{
+				"name": "back"
+			},
+			{
+				"name": "start"
+			},
+			{
+				"name": "left stick"
+			},
+			{
+				"name": "right stick"
+			},
+			{
+				"name": "dpad up",
+				"axis": "dpad y",
+				"axisValue": -1
+			},
+			{
+				"name": "dpad down",
+				"axis": "dpad y",
+				"axisValue": 1
+			},
+			{
+				"name": "dpad left",
+				"axis": "dpad x",
+				"axisValue": -1
+			},
+			{
+				"name": "dpad right",
+				"axis": "dpad x",
+				"axisValue": 1
+			},
+			{
+				"name": "home"
+			},
 		],
 		"axes": [
 			{
@@ -136,18 +204,21 @@ function getMapping(gamepadId, userAgent) {
 }
 
 function transformButton(mapping, gp, button, i) {
-	var name = mapping.buttons[i];
-	if (name === undefined) {
-		name = "button " + i;
+	var mb = mapping.buttons[i] || { name: "button " + i };
+	gp.buttons[mb.name] = button.pressed;
+	if (mb.axis) {
+		if (button.pressed) {
+			gp.axes[mb.axis] = mb.axisValue;
+		} else if (gp.axes[mb.axis] === undefined) {
+			gp.axes[mb.axis] = 0;
+		}
 	}
-	gp.buttons[name] = button.pressed;
 	return gp;
 }
 
 function transformAxis(mapping, threshold, gp, axis, i) {
 	var ma = mapping.axes[i] || { name: "axis " + i };
-	var name = ma.name;
-	gp.axes[name] = axis;
+	gp.axes[ma.name] = axis;
 	if (ma.buttons) {
 		if (ma.buttons[0] !== null) {
 			gp.buttons[ma.buttons[0]] = axis < -threshold;
