@@ -194,5 +194,100 @@
 				]
 			}
 		]
-	}
+	},
+	{
+		"id": "Sony Computer Entertainment Wireless Controller",
+		"userAgent": "Firefox",
+		"buttons": [
+			{
+				"name": "x"
+			},
+			{
+				"name": "a"
+			},
+			{
+				"name": "b"
+			},
+			{
+				"name": "y"
+			},
+			{
+				"name": "left shoulder"
+			},
+			{
+				"name": "right shoulder"
+			},
+			{
+				"name": "left trigger"
+			},
+			{
+				"name": "right trigger"
+			},
+			{
+				"name": "back"
+			},
+			{
+				"name": "start"
+			},
+			{
+				"name": "left stick"
+			},
+			{
+				"name": "right stick"
+			},
+			{
+				"name": "home"
+			}
+		],
+		"axes": [
+			{
+				"name": "left stick x",
+				"buttons": [
+					"left stick left",
+					"left stick right",
+				]
+			},
+			{
+				"name": "left stick y",
+				"buttons": [
+					"left stick up",
+					"left stick down",
+				]
+			},
+			{
+				"name": "right stick x",
+				"buttons": [
+					"right stick left",
+					"right stick right",
+				]
+			},
+			{
+				"name": "left trigger",
+			},
+			{
+				"name": "right trigger",
+			},
+			{
+				"name": "right stick y",
+				"buttons": [
+					"right stick up",
+					"right stick down",
+				]
+			},
+			{
+				"name": "dpad x",
+				"buttons": [
+					"dpad left",
+					"dpad right",
+				]
+			},
+			{
+				"name": "dpad y",
+				"buttons": [
+					"dpad up",
+					"dpad down",
+				]
+			}
+		]
+	},
 ]
