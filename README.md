@@ -63,7 +63,7 @@ Available axis names are:
 * "left trigger"
 * "right trigger"
 
-# `isPressed(gamepad, button)`
+# `button(gamepad, button)`
 
 Returns `true` if `button` is pressed on `controller`, and `false` otherwise.
 
