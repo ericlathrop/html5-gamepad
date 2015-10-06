@@ -35,6 +35,7 @@ If a controller is not listed below, it uses the mapping for the Logitech Gamepa
 
 * Logitech Gamepad F310
 * Sony PlayStation 4
+* Sony PlayStation 3 (Sixaxis / DualShock 3)
 
 # `update()`
 
