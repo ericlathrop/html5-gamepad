@@ -417,15 +417,23 @@
 			},
 			{
 				"name": "dpad up",
+				"axis": "dpad y",
+				"axisValue": -1
 			},
 			{
 				"name": "dpad right",
+				"axis": "dpad x",
+				"axisValue": 1
 			},
 			{
 				"name": "dpad down",
+				"axis": "dpad y",
+				"axisValue": 1
 			},
 			{
 				"name": "dpad left",
+				"axis": "dpad x",
+				"axisValue": -1
 			},
 			{
 				"name": "left trigger",
