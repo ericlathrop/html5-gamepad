@@ -79,5 +79,11 @@ Gamepad.prototype.isPressed = function(gamepad, button) {
 	}
 	return this.gamepads[gamepad].buttons[button];
 };
+Gamepad.prototype.name = function(gamepad) {
+	if (gamepad >= this.gamepads.length) {
+		return undefined;
+	}
+	return this.gamepads[gamepad].id;
+};
 
 module.exports = Gamepad;

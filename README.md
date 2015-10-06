@@ -44,6 +44,10 @@ Read the current state of the gamepads. You should call this once at the top of 
 
 Return the number of connected gamepads.
 
+# `name(gamepad)`
+
+Return the text name of `gamepad`.
+
 # `axis(gamepad, axis)`
 
 Returns the current position of `axis` for `gamepad`.
