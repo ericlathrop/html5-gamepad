@@ -34,6 +34,7 @@ window.requestAnimationFrame(render);
 If a controller is not listed below, it uses the mapping for the Logitech Gamepad F310 on Firefox, which may or may not work. Additional mappings can be added to [mappings.json](mappings.json).
 
 * Logitech Gamepad F310
+* Sony PlayStation 4
 
 # `update()`
 
