@@ -562,5 +562,104 @@
 				"name": "accelerometer z",
 			}
 		]
+	},
+	{
+		"id": "Sony PLAYSTATION(R)3 Controller",
+		"userAgent": "WebKit",
+		"buttons": [
+			{
+				"name": "a",
+			},
+			{
+				"name": "b",
+			},
+			{
+				"name": "x",
+			},
+			{
+				"name": "y",
+			},
+			{
+				"name": "left shoulder",
+			},
+			{
+				"name": "right shoulder",
+			},
+			{
+				"name": "left trigger",
+				"axis": "left trigger",
+				"axisValue": 1
+			},
+			{
+				"name": "right trigger",
+				"axis": "right trigger",
+				"axisValue": 1
+			},
+			{
+				"name": "back",
+			},
+			{
+				"name": "start",
+			},
+			{
+				"name": "left stick",
+			},
+			{
+				"name": "right stick",
+			},
+			{
+				"name": "dpad up",
+				"axis": "dpad y",
+				"axisValue": -1
+			},
+			{
+				"name": "dpad down",
+				"axis": "dpad y",
+				"axisValue": 1
+			},
+			{
+				"name": "dpad left",
+				"axis": "dpad x",
+				"axisValue": -1
+			},
+			{
+				"name": "dpad right",
+				"axis": "dpad x",
+				"axisValue": 1
+			},
+			{
+				"name": "home",
+			},
+		],
+		"axes": [
+			{
+				"name": "left stick x",
+				"buttons": [
+					"left stick left",
+					"left stick right",
+				]
+			},
+			{
+				"name": "left stick y",
+				"buttons": [
+					"left stick up",
+					"left stick down",
+				]
+			},
+			{
+				"name": "right stick x",
+				"buttons": [
+					"right stick left",
+					"right stick right",
+				]
+			},
+			{
+				"name": "right stick y",
+				"buttons": [
+					"right stick up",
+					"right stick down",
+				]
+			}
+		]
 	}
 ]
