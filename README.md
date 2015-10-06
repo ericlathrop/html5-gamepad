@@ -20,7 +20,7 @@ function render() {
 		// move right
 	}
 
-	if (gamepad.isPressed(0, "a")) {
+	if (gamepad.button(0, "a")) {
 		// jump
 	}
 
