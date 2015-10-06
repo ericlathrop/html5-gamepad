@@ -54,6 +54,7 @@
 			},
 			{
 				"name": "left trigger",
+				"scale": "to positive",
 				"buttons": [
 					null,
 					"left trigger",
@@ -75,6 +76,7 @@
 			},
 			{
 				"name": "right trigger",
+				"scale": "to positive",
 				"buttons": [
 					null,
 					"right trigger",
@@ -266,9 +268,11 @@
 			},
 			{
 				"name": "left trigger",
+				"scale": "to positive"
 			},
 			{
 				"name": "right trigger",
+				"scale": "to positive"
 			},
 			{
 				"name": "right stick y",

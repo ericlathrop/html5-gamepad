@@ -22,6 +22,9 @@ function transformButton(mapping, gp, button, i) {
 function transformAxis(mapping, threshold, gp, axis, i) {
 	var ma = mapping.axes[i] || { name: "axis " + i };
 	gp.axes[ma.name] = axis;
+	if (ma.scale === "to positive") {
+		gp.axes[ma.name] = (axis + 1.0) / 2.0;
+	}
 	if (ma.buttons) {
 		if (ma.buttons[0] !== null) {
 			gp.buttons[ma.buttons[0]] = axis < -threshold;
