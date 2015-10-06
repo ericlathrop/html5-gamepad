@@ -19,12 +19,19 @@ function transformButton(mapping, gp, button, i) {
 	return gp;
 }
 
+function scaleAxis(axis, scale) {
+	if (scale === "to positive") {
+		return (axis + 1.0) / 2.0;
+	}
+	if (scale === "to negative") {
+		return (axis + 1.0) / -2.0;
+	}
+	return axis;
+}
+
 function transformAxis(mapping, threshold, gp, axis, i) {
 	var ma = mapping.axes[i] || { name: "axis " + i };
-	gp.axes[ma.name] = axis;
-	if (ma.scale === "to positive") {
-		gp.axes[ma.name] = (axis + 1.0) / 2.0;
-	}
+	gp.axes[ma.name] = scaleAxis(axis, ma.scale);
 	if (ma.buttons) {
 		if (ma.buttons[0] !== null) {
 			gp.buttons[ma.buttons[0]] = axis < -threshold;
