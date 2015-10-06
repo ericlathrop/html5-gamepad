@@ -398,5 +398,169 @@
 				]
 			}
 		]
+	},
+	{
+		"id": "Sony PLAYSTATION(R)3 Controller",
+		"userAgent": "Firefox",
+		"buttons": [
+			{
+				"name": "back",
+			},
+			{
+				"name": "left stick",
+			},
+			{
+				"name": "right stick",
+			},
+			{
+				"name": "start",
+			},
+			{
+				"name": "dpad up",
+			},
+			{
+				"name": "dpad right",
+			},
+			{
+				"name": "dpad down",
+			},
+			{
+				"name": "dpad left",
+			},
+			{
+				"name": "left trigger",
+			},
+			{
+				"name": "right trigger",
+			},
+			{
+				"name": "left shoulder",
+			},
+			{
+				"name": "right shoulder",
+			},
+			{
+				"name": "y",
+			},
+			{
+				"name": "b",
+			},
+			{
+				"name": "a",
+			},
+			{
+				"name": "x",
+			},
+			{
+				"name": "home",
+			},
+		],
+		"axes": [
+			{
+				"name": "left stick x",
+				"buttons": [
+					"left stick left",
+					"left stick right",
+				]
+			},
+			{
+				"name": "left stick y",
+				"buttons": [
+					"left stick up",
+					"left stick down",
+				]
+			},
+			{
+				"name": "right stick x",
+				"buttons": [
+					"right stick left",
+					"right stick right",
+				]
+			},
+			{
+				"name": "right stick y",
+				"buttons": [
+					"right stick up",
+					"right stick down",
+				]
+			},
+			{
+				"name": "dunno 1",
+			},
+			{
+				"name": "dunno 2",
+			},
+			{
+				"name": "dunno 3",
+			},
+			{
+				"name": "dunno 4",
+			},
+			{
+				"name": "dpad up",
+				"scale": "to positive"
+			},
+			{
+				"name": "dpad right",
+				"scale": "to positive"
+			},
+			{
+				"name": "dpad down",
+				"scale": "to positive"
+			},
+			{
+				"name": "dunno 8",
+			},
+			{
+				"name": "left trigger",
+				"scale": "to positive"
+			},
+			{
+				"name": "right trigger",
+				"scale": "to positive"
+			},
+			{
+				"name": "left shoulder",
+				"scale": "to positive"
+			},
+			{
+				"name": "right shoulder",
+				"scale": "to positive"
+			},
+			{
+				"name": "y",
+				"scale": "to positive"
+			},
+			{
+				"name": "b",
+				"scale": "to positive"
+			},
+			{
+				"name": "a",
+				"scale": "to positive"
+			},
+			{
+				"name": "x",
+				"scale": "to positive"
+			},
+			{
+				"name": "dunno 9",
+			},
+			{
+				"name": "dunno 10",
+			},
+			{
+				"name": "dunno 11",
+			},
+			{
+				"name": "accelerometer x",
+			},
+			{
+				"name": "accelerometer y",
+			},
+			{
+				"name": "accelerometer z",
+			}
+		]
 	}
 ]
