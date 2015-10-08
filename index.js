@@ -1,6 +1,4 @@
-var mappings = require("./mappings.json");
-
-function getMapping(gamepadId, userAgent) {
+function getMapping(mappings, gamepadId, userAgent) {
 	return mappings.filter(function(mapping) {
 		return gamepadId.indexOf(mapping.id) !== -1 && userAgent.indexOf(mapping.userAgent) !== -1;
 	})[0] || mappings[0];
@@ -43,13 +41,13 @@ function transformAxis(mapping, threshold, gp, axis, i) {
 	return gp;
 }
 
-function transformGamepad(threshold, gamepad) {
+function transformGamepad(mappings, threshold, gamepad) {
 	var gp = {
 		id: gamepad.id,
 		buttons: {},
 		axes: {}
 	};
-	var mapping = getMapping(gamepad.id, navigator.userAgent);
+	var mapping = getMapping(mappings, gamepad.id, navigator.userAgent);
 	gp = gamepad.buttons.reduce(transformButton.bind(undefined, mapping), gp),
 	gp = gamepad.axes.reduce(transformAxis.bind(undefined, mapping, threshold), gp);
 	return gp;
@@ -59,9 +57,10 @@ function isDefined(val) {
 	return val !== undefined;
 }
 
-function Gamepad() {
+function Gamepad(mappings) {
 	this.threshold = 0.001;
 	this.gamepads = [];
+	this.mappings = mappings || require("./mappings.json");
 }
 Gamepad.prototype.update = function() {
 	// navigator.getGamepads() returns an array-like object, not an actual object
@@ -69,7 +68,7 @@ Gamepad.prototype.update = function() {
 	//
 	// WTF: webkit always returns 4 gamepads, so remove the undefined ones
 	var gamepads = Array.prototype.slice.call(navigator.getGamepads()).filter(isDefined);
-	this.gamepads = gamepads.map(transformGamepad.bind(undefined, this.threshold));
+	this.gamepads = gamepads.map(transformGamepad.bind(undefined, this.mappings, this.threshold));
 };
 Gamepad.prototype.axis = function(gamepad, axis) {
 	if (gamepad >= this.gamepads.length) {
