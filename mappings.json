@@ -671,7 +671,7 @@
 		]
 	},
 	{
-		"id": "Xbox 360 Wired Controller (Vendor: 0e6f Product: 0147)",
+		"id": "e6f-147-Xbox 360 Wired Controller",
 		"userAgent": "Firefox",
 		"buttons": [
 			{
@@ -693,20 +693,50 @@
 				"name": "right shoulder"
 			},
 			{
-				"name": "back"
-			},
-			{
-				"name": "start"
-			},
-			{
-				"name": "home"
-			},
-			{
 				"name": "left stick"
 			},
 			{
 				"name": "right stick"
 			},
+			{
+				"name": "start"
+			},
+			{
+				"name": "back"
+			},
+			{
+				"name": "home"
+			},
+			{
+				"name": "dpad up",
+				"axis": "dpad y",
+				"axisValue": -1
+			},
+			{
+				"name": "dpad down",
+				"axis": "dpad y",
+				"axisValue": 1
+			},
+			{
+				"name": "dpad left",
+				"axis": "dpad x",
+				"axisValue": -1
+			},
+			{
+				"name": "dpad right",
+				"axis": "dpad x",
+				"axisValue": 1
+			},
+			{
+				"name": "left trigger",
+				"axis": "left trigger",
+				"axisValue": 1
+			},
+			{
+				"name": "right trigger",
+				"axis": "right trigger",
+				"axisValue": 1
+			}
 		],
 		"axes": [
 			{
@@ -724,14 +754,6 @@
 				]
 			},
 			{
-				"name": "left trigger",
-				"scale": "to positive",
-				"buttons": [
-					null,
-					"left trigger",
-				]
-			},
-			{
 				"name": "right stick x",
 				"buttons": [
 					"right stick left",
@@ -746,25 +768,17 @@
 				]
 			},
 			{
+				"name": "left trigger",
+				"buttons": [
+                    "left trigger",
+                    "left trigger"
+				]
+			},
+			{
 				"name": "right trigger",
-				"scale": "to positive",
 				"buttons": [
-					null,
-					"right trigger",
-				]
-			},
-			{
-				"name": "dpad x",
-				"buttons": [
-					"dpad left",
-					"dpad right",
-				]
-			},
-			{
-				"name": "dpad y",
-				"buttons": [
-					"dpad up",
-					"dpad down",
+                    "right trigger",
+                    "right trigger"
 				]
 			}
 		]
