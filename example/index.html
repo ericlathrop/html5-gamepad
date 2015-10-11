@@ -72,6 +72,8 @@
 					currentButton++;
 					step = "prompt";
 				} else {
+					mapping.id = gamepad.name(0);
+					mapping.userAgent = navigator.userAgent;
 					console.log("done");
 					console.log(mapping);
 					step = "done";
