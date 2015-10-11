@@ -3,17 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<title>html5-gamepad Test Page</title>
+	<style>
+		#content {
+			display: flex;
+			flex-direction: row;
+		}
+	</style>
 </head>
 <body>
 	<h1><a href="https://github.com/ericlathrop/html5-gamepad">html5-gamepad</a> Test Page</h1>
 	<p><button id="map">Map the controller</button></p>
 	<p>Connect a gamepad and press a button on it.</p>
 	<pre>
-		<div id="content"></div>
+		<div id="content">
+			<div id="unmapped"></div>
+			<div id="mapped"></div>
+		</div>
 	</pre>
 	<script type="text/javascript" src="index.js"></script>
 	<script>
-		var g = new Gamepad();
+		var mapped = new Gamepad();
 		var unmapped = new Gamepad([{
 			buttons: [],
 			axes: []
@@ -83,11 +92,12 @@
 		}
 
 		function render() {
-			g.update();
+			mapped.update();
 			unmapped.update();
 			collectMappings(unmapped);
 
-			document.getElementById("content").innerHTML = JSON.stringify(unmapped.gamepads, null, 2);
+			document.getElementById("unmapped").innerHTML = JSON.stringify(unmapped.gamepads, null, 2);
+			document.getElementById("mapped").innerHTML = JSON.stringify(mapped.gamepads, null, 2);
 			window.requestAnimationFrame(render);
 		}
 		window.requestAnimationFrame(render);
