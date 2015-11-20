@@ -35,21 +35,21 @@
 			},
 			{
 				"name": "right stick"
-			},
+			}
 		],
 		"axes": [
 			{
 				"name": "left stick x",
 				"buttons": [
 					"left stick left",
-					"left stick right",
+					"left stick right"
 				]
 			},
 			{
 				"name": "left stick y",
 				"buttons": [
 					"left stick up",
-					"left stick down",
+					"left stick down"
 				]
 			},
 			{
@@ -57,21 +57,21 @@
 				"scale": "to positive",
 				"buttons": [
 					null,
-					"left trigger",
+					"left trigger"
 				]
 			},
 			{
 				"name": "right stick x",
 				"buttons": [
 					"right stick left",
-					"right stick right",
+					"right stick right"
 				]
 			},
 			{
 				"name": "right stick y",
 				"buttons": [
 					"right stick up",
-					"right stick down",
+					"right stick down"
 				]
 			},
 			{
@@ -79,21 +79,21 @@
 				"scale": "to positive",
 				"buttons": [
 					null,
-					"right trigger",
+					"right trigger"
 				]
 			},
 			{
 				"name": "dpad x",
 				"buttons": [
 					"dpad left",
-					"dpad right",
+					"dpad right"
 				]
 			},
 			{
 				"name": "dpad y",
 				"buttons": [
 					"dpad up",
-					"dpad down",
+					"dpad down"
 				]
 			}
 		]
@@ -164,35 +164,35 @@
 			},
 			{
 				"name": "home"
-			},
+			}
 		],
 		"axes": [
 			{
 				"name": "left stick x",
 				"buttons": [
 					"left stick left",
-					"left stick right",
+					"left stick right"
 				]
 			},
 			{
 				"name": "left stick y",
 				"buttons": [
 					"left stick up",
-					"left stick down",
+					"left stick down"
 				]
 			},
 			{
 				"name": "right stick x",
 				"buttons": [
 					"right stick left",
-					"right stick right",
+					"right stick right"
 				]
 			},
 			{
 				"name": "right stick y",
 				"buttons": [
 					"right stick up",
-					"right stick down",
+					"right stick down"
 				]
 			}
 		]
@@ -249,21 +249,21 @@
 				"name": "left stick x",
 				"buttons": [
 					"left stick left",
-					"left stick right",
+					"left stick right"
 				]
 			},
 			{
 				"name": "left stick y",
 				"buttons": [
 					"left stick up",
-					"left stick down",
+					"left stick down"
 				]
 			},
 			{
 				"name": "right stick x",
 				"buttons": [
 					"right stick left",
-					"right stick right",
+					"right stick right"
 				]
 			},
 			{
@@ -278,21 +278,21 @@
 				"name": "right stick y",
 				"buttons": [
 					"right stick up",
-					"right stick down",
+					"right stick down"
 				]
 			},
 			{
 				"name": "dpad x",
 				"buttons": [
 					"dpad left",
-					"dpad right",
+					"dpad right"
 				]
 			},
 			{
 				"name": "dpad y",
 				"buttons": [
 					"dpad up",
-					"dpad down",
+					"dpad down"
 				]
 			}
 		]
@@ -373,28 +373,28 @@
 				"name": "left stick x",
 				"buttons": [
 					"left stick left",
-					"left stick right",
+					"left stick right"
 				]
 			},
 			{
 				"name": "left stick y",
 				"buttons": [
 					"left stick up",
-					"left stick down",
+					"left stick down"
 				]
 			},
 			{
 				"name": "right stick x",
 				"buttons": [
 					"right stick left",
-					"right stick right",
+					"right stick right"
 				]
 			},
 			{
 				"name": "right stick y",
 				"buttons": [
 					"right stick up",
-					"right stick down",
+					"right stick down"
 				]
 			}
 		]
@@ -404,16 +404,16 @@
 		"userAgent": "Firefox",
 		"buttons": [
 			{
-				"name": "back",
+				"name": "back"
 			},
 			{
-				"name": "left stick",
+				"name": "left stick"
 			},
 			{
-				"name": "right stick",
+				"name": "right stick"
 			},
 			{
-				"name": "start",
+				"name": "start"
 			},
 			{
 				"name": "dpad up",
@@ -436,73 +436,73 @@
 				"axisValue": -1
 			},
 			{
-				"name": "left trigger",
+				"name": "left trigger"
 			},
 			{
-				"name": "right trigger",
+				"name": "right trigger"
 			},
 			{
-				"name": "left shoulder",
+				"name": "left shoulder"
 			},
 			{
-				"name": "right shoulder",
+				"name": "right shoulder"
 			},
 			{
-				"name": "y",
+				"name": "y"
 			},
 			{
-				"name": "b",
+				"name": "b"
 			},
 			{
-				"name": "a",
+				"name": "a"
 			},
 			{
-				"name": "x",
+				"name": "x"
 			},
 			{
-				"name": "home",
-			},
+				"name": "home"
+			}
 		],
 		"axes": [
 			{
 				"name": "left stick x",
 				"buttons": [
 					"left stick left",
-					"left stick right",
+					"left stick right"
 				]
 			},
 			{
 				"name": "left stick y",
 				"buttons": [
 					"left stick up",
-					"left stick down",
+					"left stick down"
 				]
 			},
 			{
 				"name": "right stick x",
 				"buttons": [
 					"right stick left",
-					"right stick right",
+					"right stick right"
 				]
 			},
 			{
 				"name": "right stick y",
 				"buttons": [
 					"right stick up",
-					"right stick down",
+					"right stick down"
 				]
 			},
 			{
-				"name": "dunno 1",
+				"name": "dunno 1"
 			},
 			{
-				"name": "dunno 2",
+				"name": "dunno 2"
 			},
 			{
-				"name": "dunno 3",
+				"name": "dunno 3"
 			},
 			{
-				"name": "dunno 4",
+				"name": "dunno 4"
 			},
 			{
 				"name": "dpad up",
@@ -517,7 +517,7 @@
 				"scale": "to positive"
 			},
 			{
-				"name": "dunno 8",
+				"name": "dunno 8"
 			},
 			{
 				"name": "left trigger",
@@ -552,22 +552,22 @@
 				"scale": "to positive"
 			},
 			{
-				"name": "dunno 9",
+				"name": "dunno 9"
 			},
 			{
-				"name": "dunno 10",
+				"name": "dunno 10"
 			},
 			{
-				"name": "dunno 11",
+				"name": "dunno 11"
 			},
 			{
-				"name": "accelerometer x",
+				"name": "accelerometer x"
 			},
 			{
-				"name": "accelerometer y",
+				"name": "accelerometer y"
 			},
 			{
-				"name": "accelerometer z",
+				"name": "accelerometer z"
 			}
 		]
 	},
@@ -576,22 +576,22 @@
 		"userAgent": "WebKit",
 		"buttons": [
 			{
-				"name": "a",
+				"name": "a"
 			},
 			{
-				"name": "b",
+				"name": "b"
 			},
 			{
-				"name": "x",
+				"name": "x"
 			},
 			{
-				"name": "y",
+				"name": "y"
 			},
 			{
-				"name": "left shoulder",
+				"name": "left shoulder"
 			},
 			{
-				"name": "right shoulder",
+				"name": "right shoulder"
 			},
 			{
 				"name": "left trigger",
@@ -604,16 +604,16 @@
 				"axisValue": 1
 			},
 			{
-				"name": "back",
+				"name": "back"
 			},
 			{
-				"name": "start",
+				"name": "start"
 			},
 			{
-				"name": "left stick",
+				"name": "left stick"
 			},
 			{
-				"name": "right stick",
+				"name": "right stick"
 			},
 			{
 				"name": "dpad up",
@@ -636,36 +636,36 @@
 				"axisValue": 1
 			},
 			{
-				"name": "home",
-			},
+				"name": "home"
+			}
 		],
 		"axes": [
 			{
 				"name": "left stick x",
 				"buttons": [
 					"left stick left",
-					"left stick right",
+					"left stick right"
 				]
 			},
 			{
 				"name": "left stick y",
 				"buttons": [
 					"left stick up",
-					"left stick down",
+					"left stick down"
 				]
 			},
 			{
 				"name": "right stick x",
 				"buttons": [
 					"right stick left",
-					"right stick right",
+					"right stick right"
 				]
 			},
 			{
 				"name": "right stick y",
 				"buttons": [
 					"right stick up",
-					"right stick down",
+					"right stick down"
 				]
 			}
 		]
