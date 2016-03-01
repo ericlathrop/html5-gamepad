@@ -1,6 +1,6 @@
 {
   "name": "html5-gamepad",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Use gamepads consistently across HTML5 browsers",
   "main": "index.js",
   "directories": {
