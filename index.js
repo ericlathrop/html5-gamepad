@@ -60,7 +60,7 @@ function isDefined(val) {
 }
 
 function Gamepad() {
-	this.threshold = 0.001;
+	this.threshold = 0.05;
 	this.gamepads = [];
 }
 Gamepad.prototype.update = function() {
