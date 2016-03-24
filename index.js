@@ -64,6 +64,9 @@ function Gamepad() {
   this.gamepads = [];
 }
 Gamepad.prototype.update = function() {
+  if (typeof navigator.getGamepads !== "function") {
+    return;
+  }
   // navigator.getGamepads() returns an array-like object, not an actual object
   // so convert to an array so we can call map()
   //

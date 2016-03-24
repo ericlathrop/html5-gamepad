@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.1.4] - 2016-03-23
+### Fixed
+- Crash in browsers that don't support gamepad API (Safari)
+
 ## [0.1.3] - 2016-03-05
 ### Fixed
 - Bigger dead zone
