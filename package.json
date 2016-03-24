@@ -7,7 +7,9 @@
     "example": "example"
   },
   "scripts": {
-    "build": "browserify -s Gamepad -o example/index.js index.js"
+    "build": "npm run lint && npm run build-example",
+    "build-example": "browserify -s Gamepad -o example/index.js index.js",
+    "lint": "eslint index.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,8 @@
   },
   "homepage": "https://github.com/ericlathrop/html5-gamepad#readme",
   "devDependencies": {
-    "browserify": "^11.1.0"
+    "browserify": "^11.1.0",
+    "eslint": "^2.4.0",
+    "eslint-plugin-json": "^1.2.0"
   }
 }

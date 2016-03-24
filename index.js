@@ -79,7 +79,7 @@ Gamepad.prototype.axis = function(gamepad, axis) {
 };
 Gamepad.prototype.count = function() {
   return this.gamepads.length;
-}
+};
 Gamepad.prototype.button = function(gamepad, button) {
   if (gamepad >= this.gamepads.length) {
     return false;
