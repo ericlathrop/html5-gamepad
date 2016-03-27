@@ -3,10 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>html5-gamepad Test Page</title>
+  <link rel="stylesheet" href="main.css"/>
 </head>
 <body>
 	<h1><a href="https://github.com/ericlathrop/html5-gamepad">html5-gamepad</a> Test Page</h1>
 	<p>Connect a gamepad and press a button on it.</p>
+  <div id="controllerDiagram"></div>
 	<pre>
 		<div id="content"></div>
 	</pre>
@@ -18,8 +20,34 @@
 			g.update();
 			document.getElementById("content").innerHTML = JSON.stringify(g.gamepads, null, 2);
 			window.requestAnimationFrame(render);
+
+      document.getElementById("controllerDiagram").innerHTML = drawGamepad(g.gamepads[0]);
 		}
 		window.requestAnimationFrame(render);
+
+    function drawGamepad(gamepad) {
+      var buttons = gamepad.buttons;
+      var html = "";
+      Object.keys(buttons).forEach(function(key) {
+        html += drawButton(key, buttons[key]);
+      });
+      return html;
+    }
+
+    function drawButton(button, on) {
+      //console.log(camelize(button));
+      if (on){
+        return "<button class='"+camelize(button)+" active'></button>";
+      } else {
+        return "<button class='"+camelize(button)+"'></button>";
+      }
+    }
+    function camelize(str) {
+    return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function(match, index) {
+      if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
+      return index == 0 ? match.toLowerCase() : match.toUpperCase();
+    });
+    }
 	</script>
 </body>
 </html>
