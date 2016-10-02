@@ -60,6 +60,22 @@
       },
       "right stick": {
         "index": 10
+      },
+      "dpad left": {
+        "axis": 6,
+        "direction": -1
+      },
+      "dpad right": {
+        "axis": 6,
+        "direction": 1
+      },
+      "dpad up": {
+        "axis": 7,
+        "direction": -1
+      },
+      "dpad down": {
+        "axis": 7,
+        "direction": 1
       }
     }
   }

@@ -34,8 +34,16 @@ SingleGamepad.prototype.button = function(name) {
   if (!mapping) {
     return false;
   }
-  var index = mapping.index;
-  return this.gamepad.buttons[index].pressed;
+  if (mapping.index !== undefined) {
+    return this.gamepad.buttons[mapping.index].pressed;
+  }
+  if (mapping.axis !== undefined) {
+    if (mapping.direction < 0) {
+      return this.gamepad.axes[mapping.axis] < -0.75;
+    } else {
+      return this.gamepad.axes[mapping.axis] > 0.75;
+    }
+  }
 };
 
 function clone(obj) {
