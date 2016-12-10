@@ -49,3 +49,10 @@ SingleGamepad.prototype.button = function(name) {
 function clone(obj) {
   return JSON.parse(JSON.stringify(obj));
 }
+
+Array.prototype.slice.call(navigator.getGamepads()).forEach(function(gp) {
+  if (!gp) {
+    return;
+  }
+  gamepads[gp.index] = new SingleGamepad(gp);
+});
