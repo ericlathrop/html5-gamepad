@@ -31,10 +31,13 @@ function isCompatible(mapping, id, browser) {
   for (var i = 0; i < mapping.supported.length; i++) {
     var supported = mapping.supported[i];
 
-    return id.indexOf(supported.id) !== -1
+    if (id.indexOf(supported.id) !== -1
       && browser.indexOf(supported.os) !== -1
-      && browser.indexOf(browser) !== -1;
-  };
+      && browser.indexOf(browser) !== -1) {
+        return true;
+    }
+  }
+  return false;
 }
 SingleGamepad.prototype.axis = function(name) {
   var mapping = this.mapping.axes[name];
