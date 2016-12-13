@@ -1,0 +1,114 @@
+{
+  "name": "Logitech F310 (DirectInput) Firefox OSX",
+  "supported": [
+    {
+      "id": "46d-c216-Logitech Dual Action",
+      "os": "Mac OS X",
+      "browser": "Firefox"
+    }
+  ],
+  "axes": {
+    "left stick x": {
+      "index": 0
+    },
+    "left stick y": {
+      "index": 1
+    },
+    "left trigger": {
+      "index": 2
+    },
+    "right stick x": {
+      "index": 3
+    },
+    "right stick y": {
+      "index": 4
+    },
+    "right trigger": {
+      "index": 5
+    },
+    "dpad x": {
+      "index": 6
+    },
+    "dpad y": {
+      "index": 7
+    }
+  },
+  "buttons": {
+    "x": {
+      "index": 0
+    },
+    "left shoulder": {
+      "index": 4
+    },
+    "right shoulder": {
+      "index": 5
+    },
+    "left stick": {
+      "index": 10
+    },
+    "dpad left": {
+      "index": 14
+    },
+    "dpad right": {
+      "index": 15
+    },
+    "dpad up": {
+      "index": 12
+    },
+    "dpad down": {
+      "index": 13
+    },
+    "left trigger": {
+      "index": 6
+    },
+    "right trigger": {
+      "index": 7
+    },
+    "left stick left": {
+      "axis": 1,
+      "direction": -1
+    },
+    "left stick up": {
+      "axis": 2,
+      "direction": -1
+    },
+    "left stick right": {
+      "axis": 1,
+      "direction": 1
+    },
+    "left stick down": {
+      "axis": 2,
+      "direction": 1
+    },
+    "right stick": {
+      "index": 11
+    },
+    "right stick left": {
+      "axis": 3,
+      "direction": -1
+    },
+    "right stick up": {
+      "axis": 4,
+      "direction": -1
+    },
+    "right stick down": {
+      "axis": 4,
+      "direction": 1
+    },
+    "a": {
+      "index": 1
+    },
+    "b": {
+      "index": 2
+    },
+    "y": {
+      "index": 3
+    },
+    "back": {
+      "index": 8
+    },
+    "start": {
+      "index": 9
+    }
+  }
+}
