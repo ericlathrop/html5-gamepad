@@ -1,7 +1,7 @@
 {
   "name": "PS4 Chrome Windows",
   "supported": [
-   {
+    {
       "id": "Wireless Controller (STANDARD GAMEPAD Vendor: 054c Product: 05c4)",
       "os": "Windows NT",
       "browser": "Chrome"

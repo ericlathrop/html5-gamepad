@@ -1,10 +1,12 @@
 {
-  "name": "Logitech F310 (XInput) Chrome Linux",
-  "supported": [{
-    "id": "Logitech Gamepad F310 (STANDARD GAMEPAD Vendor: 046d Product: c21d)",
-    "os": "Linux",
-    "browser": "Chrome"
-  }],
+  "name": "PS4 Chrome OSX",
+  "supported": [
+    {
+      "id": "Wireless Controller (STANDARD GAMEPAD Vendor: 054c Product: 05c4)",
+      "os": "Mac OS X",
+      "browser": "Chrome"
+    }
+  ],
   "axes": {
     "left stick x": {
       "index": 0
@@ -47,8 +49,8 @@
     "right shoulder": {
       "index": 5
     },
-    "left stick": {
-      "index": 10
+    "right stick": {
+      "index": 11
     },
     "dpad left": {
       "index": 14
@@ -62,41 +64,6 @@
     "dpad down": {
       "index": 13
     },
-    "left stick left": {
-      "axis": 0,
-      "direction": -1
-    },
-    "left stick right": {
-      "axis": 0,
-      "direction": 1
-    },
-    "left stick up": {
-      "axis": 1,
-      "direction": -1
-    },
-    "left stick down": {
-      "axis": 1,
-      "direction": 1
-    },
-    "right stick": {
-      "index": 11
-    },
-    "right stick up": {
-      "axis": 3,
-      "direction": -1
-    },
-    "right stick down": {
-      "axis": 3,
-      "direction": 1
-    },
-    "right stick left": {
-      "axis": 2,
-      "direction": -1
-    },
-    "right stick right": {
-      "axis": 2,
-      "direction": 1
-    },
     "left trigger": {
       "index": 6
     },
@@ -107,10 +74,45 @@
       "index": 8
     },
     "home": {
-      "index": 16
+      "index": 17
     },
     "start": {
       "index": 9
+    },
+    "right stick left": {
+      "axis": 2,
+      "direction": -1
+    },
+    "right stick right": {
+      "axis": 2,
+      "direction": 1
+    },
+    "right stick up": {
+      "axis": 3,
+      "direction": -1
+    },
+    "right stick down": {
+      "axis": 3,
+      "direction": 1
+    },
+    "left stick": {
+      "index": 10
+    },
+    "left stick left": {
+      "axis": 0,
+      "direction": -1
+    },
+    "left stick up": {
+      "axis": 1,
+      "direction": -1
+    },
+    "left stick right": {
+      "axis": 0,
+      "direction": 1
+    },
+    "left stick down": {
+      "axis": 1,
+      "direction": 1
     }
   }
 }
