@@ -17,6 +17,7 @@ module.exports = [
 
   require("./xbone-chrome-linux.json"),
   require("./xbone-chrome-osx-linux.json"),
+  require("./xbone-ff-linux.json"),
 
   require("./xbox360-chrome-osx.json"),
   require("./xbox360-chrome-windows.json"),
