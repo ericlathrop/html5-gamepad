@@ -1,4 +1,4 @@
-var mappings = require("./mappings.json");
+var mappings = require("./mappings");
 
 window.addEventListener("gamepadconnected", function(e) {
   console.log("Gamepad connected at index %d: %s. %d buttons, %d axes.", e.gamepad.index, e.gamepad.id, e.gamepad.buttons.length, e.gamepad.axes.length);
@@ -25,6 +25,7 @@ SingleGamepad.prototype.detectMapping = function(id, browser) {
       return clone(mappings[i]);
     }
   }
+  console.log("no mapping found, using default for", id, "on", browser);
   return clone(mappings[0]);
 };
 function isCompatible(mapping, id, browser) {

@@ -1,0 +1,127 @@
+{
+  "name": "XBone Chrome Linux",
+  "supported": [
+    {
+      "id": "Microsoft Controller (Vendor: 045e Product: 02d1)",
+      "os": "Linux",
+      "browser": "Chrome"
+    }
+  ],
+  "axes": {
+    "left stick x": {
+      "index": 0
+    },
+    "left stick y": {
+      "index": 1
+    },
+    "left trigger": {
+      "index": 2
+    },
+    "right stick x": {
+      "index": 3
+    },
+    "right stick y": {
+      "index": 4
+    },
+    "right trigger": {
+      "index": 5
+    },
+    "dpad x": {
+      "index": 6
+    },
+    "dpad y": {
+      "index": 7
+    }
+  },
+  "buttons": {
+    "a": {
+      "index": 0
+    },
+    "b": {
+      "index": 1
+    },
+    "x": {
+      "index": 2
+    },
+    "y": {
+      "index": 3
+    },
+    "left shoulder": {
+      "index": 4
+    },
+    "right shoulder": {
+      "index": 5
+    },
+    "back": {
+      "index": 6
+    },
+    "start": {
+      "index": 7
+    },
+    "home": {
+      "index": 8
+    },
+    "dpad left": {
+      "axis": 6,
+      "direction": -1
+    },
+    "dpad right": {
+      "axis": 6,
+      "direction": 1
+    },
+    "dpad up": {
+      "axis": 7,
+      "direction": -1
+    },
+    "dpad down": {
+      "axis": 7,
+      "direction": 1
+    },
+    "left trigger": {
+      "axis": 2,
+      "direction": 1
+    },
+    "right trigger": {
+      "axis": 5,
+      "direction": 1
+    },
+    "left stick": {
+      "index": 9
+    },
+    "left stick left": {
+      "axis": 0,
+      "direction": -1
+    },
+    "left stick right": {
+      "axis": 0,
+      "direction": 1
+    },
+    "left stick up": {
+      "axis": 1,
+      "direction": -1
+    },
+    "left stick down": {
+      "axis": 1,
+      "direction": 1
+    },
+    "right stick left": {
+      "axis": 3,
+      "direction": -1
+    },
+    "right stick": {
+      "index": 10
+    },
+    "right stick right": {
+      "axis": 3,
+      "direction": 1
+    },
+    "right stick up": {
+      "axis": 4,
+      "direction": -1
+    },
+    "right stick down": {
+      "axis": 4,
+      "direction": 1
+    }
+  }
+}
