@@ -16,7 +16,9 @@
     },
     "sourceType": "module"
   },
-  "plugins": [],
+  "plugins": [
+    "json"
+  ],
   "rules": {
     "camelcase": 2,
     "comma-spacing": 2,
