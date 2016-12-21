@@ -2,14 +2,14 @@
   "name": "html5-gamepad",
   "version": "0.1.4",
   "description": "Use gamepads consistently across HTML5 browsers",
-  "main": "index.js",
+  "main": "lib/index.js",
   "directories": {
     "example": "example"
   },
   "scripts": {
     "build": "npm run lint && npm run build-example",
     "build-example": "browserify -s Gamepad -o example/index.js index.js",
-    "lint": "eslint index.js"
+    "lint": "eslint lib/index.js"
   },
   "repository": {
     "type": "git",
