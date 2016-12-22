@@ -1,53 +1,39 @@
 {
-  "name": "Logitech F310 (DirectInput) Firefox Windows",
-  "supported": [
-    {
-      "id": "046d-c216-Logitech Dual Action",
-      "os": "Windows NT",
-      "browser": "Firefox"
-    }
-  ],
   "axes": {
-    "left stick x": {
-      "index": 0
-    },
-    "left stick y": {
-      "index": 1
-    },
-    "right stick y": {
-      "index": 3
-    },
-    "right trigger": {
-      "index": 5
-    },
     "dpad x": {
       "index": 6
     },
     "dpad y": {
       "index": 7
     },
+    "left stick x": {
+      "index": 0
+    },
+    "left stick y": {
+      "index": 1
+    },
     "right stick x": {
       "index": 2
+    },
+    "right stick y": {
+      "index": 3
+    },
+    "right trigger": {
+      "index": 5
     }
   },
   "buttons": {
+    "a": {
+      "index": 1
+    },
     "b": {
       "index": 2
     },
-    "x": {
-      "index": 0
+    "back": {
+      "index": 8
     },
-    "y": {
-      "index": 3
-    },
-    "left shoulder": {
-      "index": 4
-    },
-    "right shoulder": {
-      "index": 5
-    },
-    "left stick": {
-      "index": 10
+    "dpad down": {
+      "index": 14
     },
     "dpad left": {
       "index": 15
@@ -58,8 +44,19 @@
     "dpad up": {
       "index": 13
     },
-    "dpad down": {
-      "index": 14
+    "left shoulder": {
+      "index": 4
+    },
+    "left stick": {
+      "index": 10
+    },
+    "left stick down": {
+      "axis": 1,
+      "direction": 1
+    },
+    "left stick left": {
+      "axis": 0,
+      "direction": -1
     },
     "left stick right": {
       "axis": 0,
@@ -69,33 +66,14 @@
       "axis": 1,
       "direction": -1
     },
-    "left stick left": {
-      "axis": 0,
-      "direction": -1
-    },
-    "left stick down": {
-      "axis": 1,
-      "direction": 1
-    },
     "left trigger": {
       "index": 6
     },
-    "right trigger": {
-      "index": 7
-    },
-    "a": {
-      "index": 1
+    "right shoulder": {
+      "index": 5
     },
     "right stick": {
       "index": 11
-    },
-    "right stick right": {
-      "axis": 2,
-      "direction": 1
-    },
-    "right stick up": {
-      "axis": 3,
-      "direction": -1
     },
     "right stick down": {
       "axis": 3,
@@ -105,11 +83,33 @@
       "axis": 2,
       "direction": -1
     },
-    "back": {
-      "index": 8
+    "right stick right": {
+      "axis": 2,
+      "direction": 1
+    },
+    "right stick up": {
+      "axis": 3,
+      "direction": -1
+    },
+    "right trigger": {
+      "index": 7
     },
     "start": {
       "index": 9
+    },
+    "x": {
+      "index": 0
+    },
+    "y": {
+      "index": 3
     }
-  }
+  },
+  "name": "Logitech F310 (DirectInput) Firefox Windows",
+  "supported": [
+    {
+      "browser": "Firefox",
+      "id": "046d-c216-Logitech Dual Action",
+      "os": "Windows NT"
+    }
+  ]
 }

@@ -1,13 +1,11 @@
 {
-  "name": "XBone Chrome Linux",
-  "supported": [
-    {
-      "id": "Microsoft Controller (Vendor: 045e Product: 02d1)",
-      "os": "Linux",
-      "browser": "Chrome"
-    }
-  ],
   "axes": {
+    "dpad x": {
+      "index": 6
+    },
+    "dpad y": {
+      "index": 7
+    },
     "left stick x": {
       "index": 0
     },
@@ -25,12 +23,6 @@
     },
     "right trigger": {
       "index": 5
-    },
-    "dpad x": {
-      "index": 6
-    },
-    "dpad y": {
-      "index": 7
     }
   },
   "buttons": {
@@ -40,26 +32,12 @@
     "b": {
       "index": 1
     },
-    "x": {
-      "index": 2
-    },
-    "y": {
-      "index": 3
-    },
-    "left shoulder": {
-      "index": 4
-    },
-    "right shoulder": {
-      "index": 5
-    },
     "back": {
       "index": 6
     },
-    "start": {
-      "index": 7
-    },
-    "home": {
-      "index": 8
+    "dpad down": {
+      "axis": 7,
+      "direction": 1
     },
     "dpad left": {
       "axis": 6,
@@ -73,20 +51,18 @@
       "axis": 7,
       "direction": -1
     },
-    "dpad down": {
-      "axis": 7,
-      "direction": 1
+    "home": {
+      "index": 8
     },
-    "left trigger": {
-      "axis": 2,
-      "direction": 1
-    },
-    "right trigger": {
-      "axis": 5,
-      "direction": 1
+    "left shoulder": {
+      "index": 4
     },
     "left stick": {
       "index": 9
+    },
+    "left stick down": {
+      "axis": 1,
+      "direction": 1
     },
     "left stick left": {
       "axis": 0,
@@ -100,16 +76,23 @@
       "axis": 1,
       "direction": -1
     },
-    "left stick down": {
-      "axis": 1,
+    "left trigger": {
+      "axis": 2,
+      "direction": 1
+    },
+    "right shoulder": {
+      "index": 5
+    },
+    "right stick": {
+      "index": 10
+    },
+    "right stick down": {
+      "axis": 4,
       "direction": 1
     },
     "right stick left": {
       "axis": 3,
       "direction": -1
-    },
-    "right stick": {
-      "index": 10
     },
     "right stick right": {
       "axis": 3,
@@ -119,9 +102,26 @@
       "axis": 4,
       "direction": -1
     },
-    "right stick down": {
-      "axis": 4,
+    "right trigger": {
+      "axis": 5,
       "direction": 1
+    },
+    "start": {
+      "index": 7
+    },
+    "x": {
+      "index": 2
+    },
+    "y": {
+      "index": 3
     }
-  }
+  },
+  "name": "XBone Chrome Linux",
+  "supported": [
+    {
+      "browser": "Chrome",
+      "id": "Microsoft Controller (Vendor: 045e Product: 02d1)",
+      "os": "Linux"
+    }
+  ]
 }

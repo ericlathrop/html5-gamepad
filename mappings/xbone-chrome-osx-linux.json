@@ -1,17 +1,4 @@
 {
-  "name": "Xbox One Chrome OSX Linux",
-  "supported": [
-    {
-      "id": "©Microsoft Corporation Controller (STANDARD GAMEPAD Vendor: 045e Product: 028e)",
-      "os": "Linux",
-      "browser": "Chrome"
-    },
-    {
-      "id": "Xbox One Controller (STANDARD GAMEPAD Vendor: 02d1 Product: 045e)",
-      "os": "Mac OS X",
-      "browser": "Chrome"
-    }
-  ],
   "axes": {
     "left stick x": {
       "index": 0
@@ -33,23 +20,11 @@
     "b": {
       "index": 1
     },
-    "x": {
-      "index": 2
+    "back": {
+      "index": 8
     },
-    "y": {
-      "index": 3
-    },
-    "left shoulder": {
-      "index": 4
-    },
-    "right shoulder": {
-      "index": 5
-    },
-    "left stick": {
-      "index": 10
-    },
-    "right stick": {
-      "index": 11
+    "dpad down": {
+      "index": 13
     },
     "dpad left": {
       "index": 14
@@ -60,8 +35,18 @@
     "dpad up": {
       "index": 12
     },
-    "dpad down": {
-      "index": 13
+    "home": {
+      "index": 16
+    },
+    "left shoulder": {
+      "index": 4
+    },
+    "left stick": {
+      "index": 10
+    },
+    "left stick down": {
+      "axis": 1,
+      "direction": 1
     },
     "left stick left": {
       "axis": 0,
@@ -75,15 +60,18 @@
       "axis": 1,
       "direction": -1
     },
-    "left stick down": {
-      "axis": 1,
-      "direction": 1
-    },
     "left trigger": {
       "index": 6
     },
-    "right trigger": {
-      "index": 7
+    "right shoulder": {
+      "index": 5
+    },
+    "right stick": {
+      "index": 11
+    },
+    "right stick down": {
+      "axis": 3,
+      "direction": 1
     },
     "right stick left": {
       "axis": 2,
@@ -97,18 +85,30 @@
       "axis": 3,
       "direction": -1
     },
-    "right stick down": {
-      "axis": 3,
-      "direction": 1
-    },
-    "back": {
-      "index": 8
+    "right trigger": {
+      "index": 7
     },
     "start": {
       "index": 9
     },
-    "home": {
-      "index": 16
+    "x": {
+      "index": 2
+    },
+    "y": {
+      "index": 3
     }
-  }
+  },
+  "name": "Xbox One Chrome OSX Linux",
+  "supported": [
+    {
+      "browser": "Chrome",
+      "id": "©Microsoft Corporation Controller (STANDARD GAMEPAD Vendor: 045e Product: 028e)",
+      "os": "Linux"
+    },
+    {
+      "browser": "Chrome",
+      "id": "Xbox One Controller (STANDARD GAMEPAD Vendor: 02d1 Product: 045e)",
+      "os": "Mac OS X"
+    }
+  ]
 }

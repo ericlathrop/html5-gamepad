@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "npm run lint",
-    "lint": "eslint lib/* mappings/*"
+    "lint": "eslint lib/* mappings/*",
+    "sort-mappings": "ls mappings/*.json | xargs -n 1 sort-json"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   "homepage": "https://github.com/ericlathrop/html5-gamepad#readme",
   "devDependencies": {
     "eslint": "^3.12.2",
-    "eslint-plugin-json": "^1.2.0"
+    "eslint-plugin-json": "^1.2.0",
+    "sort-json": "^1.4.0"
   }
 }

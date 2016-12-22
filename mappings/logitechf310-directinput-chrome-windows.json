@@ -1,33 +1,25 @@
 {
-  "name": "Logitech F310 (DirectInput) Chrome Windows",
-  "supported": [
-   {
-      "id": "Logitech Dual Action (STANDARD GAMEPAD Vendor: 046d Product: c216)",
-      "os": "Windows NT",
-      "browser": "Chrome"
-    }
-  ],
   "axes": {
-    "left stick x": {
-      "index": 0
-    },
-    "left stick y": {
-      "index": 1
-    },
-    "right stick y": {
-      "index": 3
-    },
-    "right trigger": {
-      "index": 5
-    },
     "dpad x": {
       "index": 6
     },
     "dpad y": {
       "index": 7
     },
+    "left stick x": {
+      "index": 0
+    },
+    "left stick y": {
+      "index": 1
+    },
     "right stick x": {
       "index": 2
+    },
+    "right stick y": {
+      "index": 3
+    },
+    "right trigger": {
+      "index": 5
     }
   },
   "buttons": {
@@ -37,20 +29,11 @@
     "b": {
       "index": 1
     },
-    "x": {
-      "index": 2
+    "back": {
+      "index": 8
     },
-    "y": {
-      "index": 3
-    },
-    "left shoulder": {
-      "index": 4
-    },
-    "right shoulder": {
-      "index": 5
-    },
-    "left stick": {
-      "index": 10
+    "dpad down": {
+      "index": 13
     },
     "dpad left": {
       "index": 14
@@ -61,55 +44,72 @@
     "dpad up": {
       "index": 12
     },
-    "dpad down": {
-      "index": 13
+    "left shoulder": {
+      "index": 4
     },
-    "left trigger": {
-      "index": 6
-    },
-    "right trigger": {
-      "index": 7
-    },
-    "left stick left": {
-      "axis": 0,
-      "direction": -1
-    },
-    "left stick up": {
-      "axis": 1,
-      "direction": -1
+    "left stick": {
+      "index": 10
     },
     "left stick down": {
       "axis": 1,
       "direction": 1
     },
+    "left stick left": {
+      "axis": 0,
+      "direction": -1
+    },
     "left stick right": {
       "axis": 0,
       "direction": 1
     },
-    "back": {
-      "index": 8
+    "left stick up": {
+      "axis": 1,
+      "direction": -1
     },
-    "start": {
-      "index": 9
+    "left trigger": {
+      "index": 6
+    },
+    "right shoulder": {
+      "index": 5
     },
     "right stick": {
       "index": 11
     },
+    "right stick down": {
+      "axis": 3,
+      "direction": 1
+    },
     "right stick left": {
       "axis": 2,
-      "direction": -1
-    },
-    "right stick up": {
-      "axis": 3,
       "direction": -1
     },
     "right stick right": {
       "axis": 2,
       "direction": 1
     },
-    "right stick down": {
+    "right stick up": {
       "axis": 3,
-      "direction": 1
+      "direction": -1
+    },
+    "right trigger": {
+      "index": 7
+    },
+    "start": {
+      "index": 9
+    },
+    "x": {
+      "index": 2
+    },
+    "y": {
+      "index": 3
     }
-  }
+  },
+  "name": "Logitech F310 (DirectInput) Chrome Windows",
+  "supported": [
+    {
+      "browser": "Chrome",
+      "id": "Logitech Dual Action (STANDARD GAMEPAD Vendor: 046d Product: c216)",
+      "os": "Windows NT"
+    }
+  ]
 }
