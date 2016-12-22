@@ -1,9 +1,8 @@
 module.exports = [
   require("./default.json"),
 
-  require("./logitechf310-directinput-chrome-linux.json"),
+  require("./logitechf310-directinput-chrome-ff-linux.json"),
   require("./logitechf310-directinput-chrome-windows-osx.json"),
-  require("./logitechf310-directinput-ff-linux.json"),
   require("./logitechf310-directinput-ff-osx.json"),
   require("./logitechf310-directinput-ff-windows.json"),
 

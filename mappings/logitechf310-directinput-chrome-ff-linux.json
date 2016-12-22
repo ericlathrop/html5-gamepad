@@ -105,8 +105,13 @@
       "index": 3
     }
   },
-  "name": "Logitech F310 (DirectInput) Firefox Windows",
+  "name": "Logitech F310 (DirectInput) Chrome/Firefox Linux",
   "supported": [
+    {
+      "browser": "Chrome",
+      "id": "Logitech Logitech Dual Action (Vendor: 046d Product: c216)",
+      "os": "Linux"
+    },
     {
       "browser": "Firefox",
       "id": "046d-c216-Logitech Logitech Dual Action",
