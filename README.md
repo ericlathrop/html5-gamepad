@@ -6,13 +6,12 @@ Use gamepads consistently across HTML5 browsers
 # example
 
 ```javascript
-var Gamepad = require("html5-gamepad");
-var gamepad = new Gamepad();
+var gamepads = require("html5-gamepad");
 
 function render() {
-	gamepad.update();
+	var gamepad = gamepads[0];
 
-	var x = gamepad.axis(0, "left stick x");
+	var x = gamepad.axis("left stick x");
 	if (x < 0) {
 		// move left
 	}
@@ -20,7 +19,7 @@ function render() {
 		// move right
 	}
 
-	if (gamepad.button(0, "a")) {
+	if (gamepad.button("a")) {
 		// jump
 	}
 
@@ -35,23 +34,13 @@ If a controller is not listed below, it uses the mapping for the Logitech Gamepa
 
 * Logitech Gamepad F310
 * Sony PlayStation 4
-* Sony PlayStation 3 (Sixaxis / DualShock 3)
+* Microsoft Xbox One
+* Microsoft Xbox 360
 
-# `update()`
+# `axis(axis)`
 
-Read the current state of the gamepads. You should call this once at the top of your `requestAnimationFrame` callback.
-
-# `count()`
-
-Return the number of connected gamepads.
-
-# `name(gamepad)`
-
-Return the text name of `gamepad`.
-
-# `axis(gamepad, axis)`
-
-Returns the current position of `axis` for `gamepad`.
+Returns the current position of `axis` for `gamepad`. Axes have a range between
+-1.0 and 1.0.
 
 Available axis names are:
 
@@ -64,7 +53,7 @@ Available axis names are:
 * "left trigger"
 * "right trigger"
 
-# `button(gamepad, button)`
+# `button(button)`
 
 Returns `true` if `button` is pressed on `controller`, and `false` otherwise.
 
