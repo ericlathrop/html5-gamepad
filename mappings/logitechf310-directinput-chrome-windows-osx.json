@@ -104,8 +104,13 @@
       "index": 3
     }
   },
-  "name": "Logitech F310 (DirectInput) Chrome Windows",
+  "name": "Logitech F310 (DirectInput) Chrome Windows/OSX",
   "supported": [
+    {
+      "browser": "Chrome",
+      "id": "Logitech Dual Action (STANDARD GAMEPAD Vendor: 046d Product: c216)",
+      "os": "Mac OS X"
+    },
     {
       "browser": "Chrome",
       "id": "Logitech Dual Action (STANDARD GAMEPAD Vendor: 046d Product: c216)",
