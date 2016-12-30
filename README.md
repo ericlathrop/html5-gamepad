@@ -30,12 +30,12 @@ window.requestAnimationFrame(render);
 
 # supported gamepads
 
-If a controller is not listed below, it uses the mapping for the Logitech Gamepad F310 on Firefox, which may or may not work. Additional mappings can be added to [mappings.json](mappings.json).
+If a controller is not listed below, it uses the mapping for the Xbox 360 gamepad on Chrome, which may or may not work. Additional mappings can be added to [mappings/index.js](mappings/index.js).
 
 * Logitech Gamepad F310
-* Sony PlayStation 4
-* Microsoft Xbox One
 * Microsoft Xbox 360
+* Microsoft Xbox One
+* Sony PlayStation 4
 
 # `axis(axis)`
 

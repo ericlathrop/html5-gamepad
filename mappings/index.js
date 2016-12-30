@@ -1,5 +1,11 @@
 module.exports = [
-  require("./default.json"),
+  require("./xbox360-chrome-windows-osx.json"),
+  require("./xbox360-ff-windows.json"),
+  require("./xbox360-ff-linux.json"),
+
+  require("./xbone-chrome-linux.json"),
+  require("./xbone-chrome-osx-linux.json"),
+  require("./xbone-ff-linux.json"),
 
   require("./logitechf310-directinput-chrome-ff-linux.json"),
   require("./logitechf310-directinput-chrome-windows-osx.json"),
@@ -12,14 +18,5 @@ module.exports = [
   require("./ps4-chrome-linux.json"),
   require("./ps4-chrome-windows-osx.json"),
   require("./ps4-ff-linux.json"),
-  require("./ps4-ff-osx.json"),
-
-  require("./xbone-chrome-linux.json"),
-  require("./xbone-chrome-osx-linux.json"),
-  require("./xbone-ff-linux.json"),
-
-  require("./xbox360-chrome-osx.json"),
-  require("./xbox360-chrome-windows.json"),
-  require("./xbox360-ff-windows.json"),
-  require("./xbox360-ff-linux.json")
+  require("./ps4-ff-osx.json")
 ];

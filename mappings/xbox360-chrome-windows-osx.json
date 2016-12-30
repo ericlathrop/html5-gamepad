@@ -44,6 +44,9 @@
     "dpad up": {
       "index": 12
     },
+    "home": {
+      "index": 16
+    },
     "left shoulder": {
       "index": 4
     },
@@ -104,8 +107,13 @@
       "index": 3
     }
   },
-  "name": "Xbox 360 Chrome Windows",
+  "name": "Xbox 360 Chrome Windows/OSX",
   "supported": [
+    {
+      "browser": "Chrome",
+      "id": "Xbox 360 Controller (STANDARD GAMEPAD Vendor: 028e Product: 045e)",
+      "os": "Mac OS X"
+    },
     {
       "browser": "Chrome",
       "id": "Xbox 360 Controller (XInput STANDARD GAMEPAD)",
