@@ -1,7 +1,7 @@
 # html5-gamepad
 Use gamepads consistently across HTML5 browsers
 
-# [test page](https://ericlathrop.github.io/html5-gamepad/)
+# [Test gamepads and configure mappings here](https://ericlathrop.github.io/html5-gamepad-configurator/)
 
 # example
 

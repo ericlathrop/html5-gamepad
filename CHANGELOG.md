@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.0] - 2017-01-16
+### Fixed
+- Crash in Chrome
+- Mappings for many gamepad/OS/browser combinations
+
+### Changed
+- API changed to expose an array of gamepads
+
 ## [0.1.4] - 2016-03-23
 ### Fixed
 - Crash in browsers that don't support gamepad API (Safari)
