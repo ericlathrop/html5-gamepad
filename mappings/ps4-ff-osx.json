@@ -94,6 +94,9 @@
     "right trigger": {
       "index": 7
     },
+    "special": {
+      "index": 12
+    },
     "start": {
       "index": 9
     },
