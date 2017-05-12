@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.0] - 2017-05-12
+### Added
+- Mapping for PS3 on Linux
+- Mapping for PS4 home button and triggers as axes
+- Support for using buttons to map axes
+
 ## [1.0.1] - 2017-03-03
 ### Added
 - Mapping for PS3/Chrome/OSX
