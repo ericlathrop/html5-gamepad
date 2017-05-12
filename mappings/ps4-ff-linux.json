@@ -12,11 +12,17 @@
     "left stick y": {
       "index": 1
     },
+    "left trigger": {
+      "index": 3
+    },
     "right stick x": {
       "index": 2
     },
     "right stick y": {
       "index": 5
+    },
+    "right trigger": {
+      "index": 4
     }
   },
   "buttons": {
