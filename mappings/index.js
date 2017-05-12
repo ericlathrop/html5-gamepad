@@ -14,8 +14,9 @@ module.exports = [
 
   require("./logitechf310-xinput-chrome-linux.json"),
   require("./logitechf310-xinput-ff-linux.json"),
-  
-  require("./ps3-chrome-osx.json"),
+
+  require("./ps3-chrome-osx-linux.json"),
+  require("./ps3-ff-linux.json"),
 
   require("./ps4-chrome-linux.json"),
   require("./ps4-chrome-windows-osx.json"),
