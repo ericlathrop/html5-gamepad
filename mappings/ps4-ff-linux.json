@@ -45,6 +45,9 @@
       "axis": 7,
       "direction": -1
     },
+    "home": {
+      "index": 12
+    },
     "left shoulder": {
       "index": 4
     },

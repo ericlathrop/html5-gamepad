@@ -42,7 +42,7 @@
       "index": 14
     },
     "home": {
-      "index": 13
+      "index": 12
     },
     "left shoulder": {
       "index": 4
@@ -93,9 +93,6 @@
     },
     "right trigger": {
       "index": 7
-    },
-    "special": {
-      "index": 12
     },
     "start": {
       "index": 9
