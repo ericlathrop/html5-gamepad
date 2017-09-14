@@ -11,6 +11,12 @@
     },
     "right stick y": {
       "index": 3
+    },
+    "left trigger": {
+      "buttonAnalog": 6
+    },
+    "right trigger": {
+      "buttonAnalog": 7
     }
   },
   "buttons": {
@@ -108,6 +114,11 @@
     {
       "browser": "Chrome",
       "id": "Xbox One Controller (STANDARD GAMEPAD Vendor: 02d1 Product: 045e)",
+      "os": "Mac OS X"
+    },
+    {
+      "browser": "Chrome",
+      "id": "Xbox One Wired Controller (STANDARD GAMEPAD Vendor: 045e Product: 02d1)",
       "os": "Mac OS X"
     }
   ]
