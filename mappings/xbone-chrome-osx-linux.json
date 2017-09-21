@@ -120,6 +120,11 @@
       "browser": "Chrome",
       "id": "Xbox One Wired Controller (STANDARD GAMEPAD Vendor: 045e Product: 02d1)",
       "os": "Mac OS X"
+    },
+    {
+      "browser": "Chrome",
+      "id": "Xbox One Wired Controller (STANDARD GAMEPAD Vendor: 045e Product: 02dd)",
+      "os": "Mac OS X"
     }
   ]
 }
