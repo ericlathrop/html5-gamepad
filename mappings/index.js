@@ -22,5 +22,7 @@ module.exports = [
   require("./ps4-chrome-windows-osx.json"),
   require("./ps4-ff-linux.json"),
   require("./ps4-ff-osx.json"),
-  require("./shitty-wheel.json")
+  require("./shitty-wheel.json"),
+  
+  require("./sn30pro-chrome-cros.json")
 ];
