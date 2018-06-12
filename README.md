@@ -9,6 +9,7 @@ Use gamepads consistently across HTML5 browsers
 var gamepads = require("html5-gamepad");
 
 function render() {
+	navigator.getGamepads() //gamepad input will not update on chrome without this.
 	var gamepad = gamepads[0];
 
 	var x = gamepad.axis("left stick x");

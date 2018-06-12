@@ -1,0 +1,7 @@
+"right trigger": {
+      "index": 5
+    },
+
+    "right trigger": {
+      "index": 7
+    },

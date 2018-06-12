@@ -18,8 +18,11 @@
     "right stick y": {
       "index": 3
     },
+    "left trigger": {
+      "buttonAnalog": 6
+    },
     "right trigger": {
-      "index": 5
+      "buttonAnalog": 7
     }
   },
   "buttons": {
@@ -93,9 +96,6 @@
     "right stick up": {
       "axis": 3,
       "direction": -1
-    },
-    "right trigger": {
-      "index": 7
     },
     "start": {
       "index": 9

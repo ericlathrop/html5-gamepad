@@ -18,8 +18,11 @@
     "right stick y": {
       "index": 3
     },
+    "left trigger": {
+      "buttonAnalog": 6
+    },
     "right trigger": {
-      "index": 5
+      "buttonAnalog": 7
     }
   },
   "buttons": {
